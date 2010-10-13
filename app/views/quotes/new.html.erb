@@ -1,0 +1,10 @@
+<% form_for @quote do |f| %>
+<div class="field">
+  <%= f.label :body, "Quote" %>
+  <%= f.text_area :body %>
+</div>
+
+<div class="field sumbit">
+  <%= f.submit %>
+</div>
+<% end %>

@@ -1,19 +1,28 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  body: MyText
+normal:
+  body: "This is essentially a problem with logic."
   speaker_id: 1
-  context: MyString
+  context: "Telling his networking class what troubleshooting is."
   channel_id: 1
   date: 2010-10-13 00:57:49
   offensive: false
   spam: false
 
-two:
-  body: MyText
+offensive:
+  body: "You suck!"
   speaker_id: 1
-  context: MyString
+  context: "Your face."
   channel_id: 1
   date: 2010-10-13 00:57:49
-  offensive: false
+  offensive: true
+  spam: false
+  
+nil_offensive:
+  body: "The offensive flag has not yet been set"
+  speaker_id: 1
+  context: "We are in the Rails testing environment."
+  channel_id: 1
+  date: <%= Time.now %>
+  offensive:
   spam: false
