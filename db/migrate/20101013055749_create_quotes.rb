@@ -6,8 +6,8 @@ class CreateQuotes < ActiveRecord::Migration
       t.string :context
       t.integer :channel_id
       t.datetime :date
-      t.boolean :offensive
-      t.boolean :spam
+      t.boolean :offensive, :default => false
+      t.boolean :spam, :default => false
 
       t.timestamps
     end

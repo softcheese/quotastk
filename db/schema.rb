@@ -31,8 +31,8 @@ ActiveRecord::Schema.define(:version => 20101013055906) do
     t.string   "context"
     t.integer  "channel_id"
     t.datetime "date"
-    t.boolean  "offensive"
-    t.boolean  "spam"
+    t.boolean  "offensive",  :default => false
+    t.boolean  "spam",       :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
