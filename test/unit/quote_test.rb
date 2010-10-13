@@ -19,4 +19,9 @@ class QuoteTest < ActiveSupport::TestCase
       assert quote.offensive
     end
   end
+  
+  test "should not save without a body" do
+    q = Quote.new
+    assert !q.save
+  end
 end
