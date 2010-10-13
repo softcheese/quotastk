@@ -1,3 +1,5 @@
-<%= @quotes.each do |quote| %>
-  <p><%= quote.body %></p>
+<% @quotes.each do |quote| %>
+  <div class="quote">
+    <div class="body"><%= quote.body %></div>
+  </div>
 <% end %>
