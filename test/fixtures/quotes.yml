@@ -17,12 +17,3 @@ offensive:
   date: 2010-10-13 00:57:49
   offensive: true
   spam: false
-  
-nil_offensive:
-  body: "The offensive flag has not yet been set"
-  speaker_id: 1
-  context: "We are in the Rails testing environment."
-  channel_id: 1
-  date: <%= Time.now %>
-  offensive:
-  spam: false

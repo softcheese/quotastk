@@ -19,7 +19,7 @@ class QuoteTest < ActiveSupport::TestCase
   test "should not return any normal quotes" do
     found_normal_quote = false
     Quote.offensive.each do |quote|
-      found_normal_quote = true if quote.offensive == false || quote.offensive == nil
+      found_normal_quote = true if quote.offensive == false
     end
     assert !found_normal_quote
   end
