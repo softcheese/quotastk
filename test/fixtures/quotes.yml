@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  body: MyText
+  speaker_id: 1
+  context: MyString
+  channel_id: 1
+  date: 2010-10-13 00:57:49
+  offensive: false
+  spam: false
+
+two:
+  body: MyText
+  speaker_id: 1
+  context: MyString
+  channel_id: 1
+  date: 2010-10-13 00:57:49
+  offensive: false
+  spam: false
