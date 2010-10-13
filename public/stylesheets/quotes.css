@@ -1,0 +1,7 @@
+.quote { 
+  background-color: #eee; 
+  margin-bottom: 12px;
+  padding: 10px;
+}
+
+.quote .context { font-style: italic; }
