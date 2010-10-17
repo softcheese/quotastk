@@ -2,7 +2,6 @@
 
 normal:
   body: "This is essentially a problem with logic."
-  speaker_id: 1
   context: "Telling his networking class what troubleshooting is."
   channel_id: 1
   date: 2010-10-13 00:57:49
@@ -11,7 +10,6 @@ normal:
 
 offensive:
   body: "You suck!"
-  speaker_id: 1
   context: "Your face."
   channel_id: 1
   date: 2010-10-13 00:57:49

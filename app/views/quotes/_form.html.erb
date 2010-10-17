@@ -1,0 +1,23 @@
+<%= form_for @quote do |f| -%>
+<div class="field">
+  <%= f.label :body, "Quote" %>
+  <%= f.text_area :body, :cols => 80, :rows => 10 %>
+</div>
+
+<div class="field">
+<%= f.fields_for :speakers do |s| -%>
+  <%= s.label :name, "Speaker(s)" %>
+  <div class="instructions">(Use a comma delimited list of names)</div>
+  <%= s.text_field :name %>
+<% end -%>
+</div>
+
+<div class="field">
+  <%= f.label :context %>
+  <%= f.text_field :context %>
+</div>
+
+<div class="field sumbit">
+  <%= f.submit %>
+</div>
+<% end -%>

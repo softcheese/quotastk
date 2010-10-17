@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101013055906) do
+ActiveRecord::Schema.define(:version => 20101016141853) do
 
   create_table "channels", :force => true do |t|
     t.string   "name"
@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(:version => 20101013055906) do
 
   create_table "quotes", :force => true do |t|
     t.text     "body"
-    t.integer  "speaker_id"
     t.string   "context"
     t.integer  "channel_id"
     t.datetime "date"
@@ -35,6 +34,11 @@ ActiveRecord::Schema.define(:version => 20101013055906) do
     t.boolean  "spam",       :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "quotes_speakers", :id => false, :force => true do |t|
+    t.integer "quote_id"
+    t.integer "speaker_id"
   end
 
   create_table "speakers", :force => true do |t|

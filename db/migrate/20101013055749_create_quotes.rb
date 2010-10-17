@@ -2,7 +2,6 @@ class CreateQuotes < ActiveRecord::Migration
   def self.up
     create_table :quotes do |t|
       t.text :body
-      t.integer :speaker_id
       t.string :context
       t.integer :channel_id
       t.datetime :date
