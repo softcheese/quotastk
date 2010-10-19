@@ -13,11 +13,7 @@ class QuotesController < ApplicationController
     @quote = Quote.create params[:quote]
     redirect_to quotes_path
   end
-  
-  def edit
-    @quote = Quote.find(params[:id])
-  end
-  
+
 private
   
   def unsentenceize_speaker_names

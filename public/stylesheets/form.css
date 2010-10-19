@@ -1,1 +1,16 @@
 label { display: block; }
+
+ .field { 
+  background-color: #eee; 
+  margin-bottom: 12px;
+  padding: 10px;
+}
+
+.sub.field {
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+input[type="text"] {
+  font-size: 16px;
+}

@@ -17,6 +17,24 @@
   <%= f.text_field :context %>
 </div>
 
+<div class="field">
+  <%= check_box_tag 'from-irc', 'from_irc', false, :onchange => 'ircToggle()' %> This quote is from IRC
+  <div id="irc-toggle">
+    <%= f.fields_for :channel do |c| %>
+      <div class="sub field">
+        <%= c.label :name, "Channel" %>
+        <%= c.text_field :name %>
+      </div>
+      <div class="sub field">
+        <%= c.fields_for :network do |n| %>
+          <%= n.label :name, "Network" %>
+          <%= n.text_field :name %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
 <div class="field sumbit">
   <%= f.submit %>
 </div>
