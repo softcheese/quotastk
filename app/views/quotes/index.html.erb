@@ -1,9 +1,5 @@
 <% @quotes.each do |quote| %>
-  <div class="quote">
-    <div class="body"><%= quote.body %></div>
-    <div class="speakers">&mdash;<%= quote.speaker_list %></div>
-    <div class="context">(<%= quote.context %>)</div>
-  </div>
+  <%= render :partial => 'quote', :locals => { :quote => quote } %>
 <% end %>
 
 <%= link_to "New quote", new_quote_url %>

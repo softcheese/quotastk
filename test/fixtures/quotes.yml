@@ -1,6 +1,7 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 normal:
+  id: 1
   body: "This is essentially a problem with logic."
   context: "Telling his networking class what troubleshooting is."
   channel_id: 1
@@ -9,9 +10,26 @@ normal:
   spam: false
 
 offensive:
+  id: 2
   body: "You suck!"
   context: "Your face."
   channel_id: 1
   date: 2010-10-13 00:57:49
   offensive: true
+  spam: false
+  
+with_speakers:
+  id: 3
+  body: "I eat cold soup."
+  context: "Seriously?"
+  date: <%= Time.now %>
+  offensive: false
+  spam: false
+
+spider_pound:
+  id: 4
+  body: "Monkey pound-- hiss! You got SPIDER POUNDED!"
+  context: "Sorry, Jason."
+  date: <%= Time.now %>
+  offensive: false
   spam: false

@@ -1,0 +1,23 @@
+charlie_eats_cold_soup:
+  quote_id: 3
+  speaker_id: 1
+
+lauren_eats_cold_soup:
+  quote_id: 3
+  speaker_id: 2
+
+blue_sushi_eats_cold_soup:
+  quote_id: 3
+  speaker_id: 3
+  
+charlie_psychs_jason:
+  quote_id: 4
+  speaker_id: 1
+  
+jason_is_psyched_by_charlie:
+  quote_id: 4
+  speaker_id: 4
+  
+mr_woodhouse_teaches_networking:
+  quote_id: 1
+  speaker_id: 5
