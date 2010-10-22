@@ -3,4 +3,7 @@
   <div class="attribution"><span class="speakers">&mdash;<%= render :partial => 'speakers/speakers_list', :locals => { :speakers => quote.speakers } %></span>,
   <span class="context"><%= quote.context %></span></div>
   <div class="date"><%= time_ago_in_words quote.date %> ago</div>
+  <div class="actions">
+    <%= link_to "offensive", quote.flag_as_offensive %> <%= link_to "spam", quote.flag_as_spam %>
+  </div>
 </div>

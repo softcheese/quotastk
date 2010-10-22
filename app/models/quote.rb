@@ -7,12 +7,22 @@ class Quote < ActiveRecord::Base
   
   validates_presence_of :body, :on => :create, :message => "can't be blank"
   
+  # class methods
+  def self.find_all_by_speaker_name(speaker_name)
+    Speaker.find_by_name(speaker_name).quotes
+  end
+  
+  # instance methods
   def speaker_list
     speakers.collect{ |speaker| speaker.name }.to_sentence
   end
   
-  def self.find_all_by_speaker_name(speaker_name)
-    Speaker.find_by_name(speaker_name).quotes
+  def flag_as_offensive
+    '#'
+  end
+  
+  def flag_as_spam
+    '#'
   end
 
 end
