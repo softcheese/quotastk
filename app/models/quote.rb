@@ -16,13 +16,4 @@ class Quote < ActiveRecord::Base
   def speaker_list
     speakers.collect{ |speaker| speaker.name }.to_sentence
   end
-  
-  def flag_as_offensive
-    '#'
-  end
-  
-  def flag_as_spam
-    '#'
-  end
-
 end

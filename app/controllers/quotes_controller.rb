@@ -1,6 +1,6 @@
 class QuotesController < ApplicationController
   def index
-    @quotes = Quote.normal.all
+    @quotes = Quote.normal
   end
   
   def new
