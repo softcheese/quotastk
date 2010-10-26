@@ -1,4 +1,4 @@
-<h1><%= @speaker.name %>'s Quotes</h1>
+<h2><%= @speaker.name %>'s Quotes</h2>
 <% @speaker.quotes.each do |quote| %>
   <%= render :partial => 'quotes/quote', :locals => { :quote => quote } %>
 <% end %>

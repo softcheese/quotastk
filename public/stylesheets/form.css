@@ -1,4 +1,4 @@
-label { display: block; }
+label { display: inline-block; }
 
  .field { 
   background-color: #eee; 
@@ -13,4 +13,8 @@ label { display: block; }
 
 input[type="text"] {
   font-size: 16px;
+}
+
+input[type="checkbox"], input[type="checkbox"] + label {
+  cursor: pointer;
 }

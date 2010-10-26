@@ -1,33 +1,33 @@
 <%= form_for @quote do |f| -%>
 <div class="field">
-  <%= f.label :body, "Quote" %>
+  <%= f.label :body, "Quote" %><br/>
   <%= f.text_area :body, :cols => 80, :rows => 10 %>
 </div>
 
 <div class="field">
 <%= f.fields_for :speakers do |s| -%>
-  <%= s.label :name, "Speaker(s)" %>
+  <%= s.label :name, "Speaker(s)" %><br/>
   <div class="instructions">(Use a comma delimited list of names)</div>
   <%= s.text_field :name %>
 <% end -%>
 </div>
 
 <div class="field">
-  <%= f.label :context %>
+  <%= f.label :context %><br/>
   <%= f.text_field :context %>
 </div>
 
 <div class="field">
-  <%= check_box_tag 'from-irc', 'from_irc', false, :onchange => 'ircToggle()' %> This quote is from IRC
+  <%= check_box_tag 'from-irc', 'from_irc', false, :onchange => 'ircToggle()' %><%= label_tag 'from-irc', "This quote is from IRC" %>
   <div id="irc-toggle">
     <%= f.fields_for :channel do |c| %>
       <div class="sub field">
-        <%= c.label :name, "Channel" %>
+        <%= c.label :name, "Channel" %><br/>
         <%= c.text_field :name %>
       </div>
       <div class="sub field">
         <%= c.fields_for :network do |n| %>
-          <%= n.label :name, "Network" %>
+          <%= n.label :name, "Network" %><br/>
           <%= n.text_field :name %>
         <% end %>
       </div>
@@ -37,5 +37,6 @@
 
 <div class="field sumbit">
   <%= f.submit %>
+  or <%= link_to "Cancel", :back %>
 </div>
 <% end -%>

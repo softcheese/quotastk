@@ -1,7 +1,35 @@
 .quote { 
-  background-color: #eee; 
+  background-color: #eee;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
   margin-bottom: 12px;
   padding: 10px;
 }
 
-.quote .context { font-style: italic; }
+.quote .context { 
+  font-style: italic; 
+}
+
+
+.quote .flag.actions {
+  text-align: right;
+}
+
+.quote .flag.actions a {
+  color: #999;
+  display: inline-block;
+  font-size: 10px;
+  margin-right: 12px;
+  text-decoration: none;
+  visibility: hidden;
+}
+
+.quote:hover .flag.actions a {
+  visibility: visible;
+}
+
+.quote .flag.actions a:hover {
+  color: #333;
+  text-decoration: underline;
+}

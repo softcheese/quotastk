@@ -1,0 +1,26 @@
+#page {
+  margin: 0 auto;
+  max-width: 960px;
+  min-width: 550px;
+}
+
+#body {
+  -moz-box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  box-orient: horizontal;
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+}
+
+#primary {
+  -moz-box-flex: 4;
+  -webkit-box-flex: 4;
+  box-flex: 4;
+}
+
+#secondary {
+  width: 228px;
+  padding-left: 12px;
+}
+

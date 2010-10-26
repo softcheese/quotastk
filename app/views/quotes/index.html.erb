@@ -2,4 +2,9 @@
   <%= render :partial => 'quote', :locals => { :quote => quote } %>
 <% end %>
 
-<%= link_to "New quote", new_quote_url %>
+<%= link_to "Back to top", :anchor => "top" %>
+
+<% content_for :secondary do -%>
+  <p><%= link_to "Submit quote", new_quote_url %></p>
+  <%= render :partial => 'layouts/quick_settings' %>
+<% end -%>
