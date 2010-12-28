@@ -4,6 +4,7 @@ class Quote < ActiveRecord::Base
   
   scope :normal, where(:offensive => false)
   scope :offensive, where(:offensive => true)
+  scope :spam, where(:spam => true)
   
   validates_presence_of :body, :on => :create, :message => "can't be blank"
   
